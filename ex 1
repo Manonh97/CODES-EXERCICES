@@ -1,0 +1,16 @@
+\\Créer une fonction HELLO() qui prend comme argument (PRENOM) et qui retourne une phrase "Bonjour et bienvenue PRENOM"
+
+
+\\ Module auxiliaire HELLO
+ENTRER PRENOM
+TEXTE = "Bonjour et bienvenue " + PRENOM 
+
+RETOURNER TEXTE
+
+\\ Module principal
+DÉBUT
+ECRIRE "quel est ton prenom?"
+LIRE prenom
+ECRIRE  HELLO(prenom)
+
+FIN
