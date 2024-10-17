@@ -1,0 +1,61 @@
+\\ Module principal
+DÉBUT
+    ECRIRE "entre un prix article HTVA"
+    LIRE htva
+    ECRIRE "Prix avec TVA est : ", htva + (htva/100*21) 
+FIN
+
+
+
+\\ Module principal
+DÉBUT
+    ECRIRE "entre la longueur n1" 
+    LIRE n1
+    ECRIRE "entre la longueur n2"
+    LIRE n2
+    ECRIRE "entre la longueur n3"
+    LIRE n3 
+        SI n1 + n2 >= n3 OU n2 + n3 >= n1 OU n1 + n3 >= n2 ALORS
+        ECRIRE "c'est un triangle"
+        SINON
+        ECRIRE "c'est un triangle"
+        FINSI
+FIN
+
+
+\\ Module principal
+DÉBUT
+    
+    ECRIRE "entre un prix article HTVA"
+    LIRE htva
+    
+    ECRIRE "quel est le taux?"
+    LIRE taux
+    
+    TANTQUE taux != "21" ET taux != "6" ET taux != "0" FAIRE 
+        ECRIRE "refus" 
+        ECRIRE "quel est le taux?"
+        LIRE taux
+    FINTANTQUE
+    
+    ECRIRE "Prix avec TVA est : ", htva + (htva/100*taux)
+FIN
+
+
+
+\\ Module principal
+DÉBUT
+    ECRIRE "entre la longueur n1" 
+    LIRE n1
+    
+    ECRIRE "entre la longueur n2"
+    LIRE n2
+    
+    ECRIRE "entre la longueur n3"
+    LIRE n3 
+        SI n1 + n2 > n3 ET n2 + n3 > n1 ET n1 + n3 > n2 ALORS
+           ECRIRE "c'est un triangle"
+        SINON
+            ECRIRE "ce n'est pas un triangle"
+        FINSI
+FIN
