@@ -1,0 +1,40 @@
+\\ Module principal
+DÉBUT
+
+    ECRIRE "entre un jour"
+    LIRE j
+
+    ECRIRE "entre le mois"
+    LIRE m
+
+    ECRIRE "entre l'annee"
+    LIRE a
+
+    SI ( a <= 0 OU a > 2999) OU ( m < 1 OU m > 12 ) ALORS
+        ECRIRE "faux 1"
+    SINON
+        SI ( m = "4" OU m = "6" OU m = "9" OU m = "11" ) ET j <= 30 ALORS
+            ECRIRE "vrai 2"
+        SINON
+            SI ( m = "1" OU m = "3" OU m = "5" OU m = "7" OU m = "8" OU m = "10" OU m = "12" ) ET j <= 31 ALORS
+                ECRIRE "vrai 3"
+            SINON
+                SI (m = "2" ) ALORS
+                    SI ( a %4 = 0 ) ET j <= "29" ALORS
+                        ECRIRE "vrai 4"
+                    SINON 
+                        SI j <= "28" ALORS
+                            ECRIRE "vrai 5"
+                        SINON
+                            ECRIRE "c'est faux 6"
+                                               
+                        FINSI
+                    FINSI
+                SINON 
+                    ECRIRE "faux 7"
+                FINSI
+            FINSI
+        FINSI
+    FINSI
+    
+FIN                        
