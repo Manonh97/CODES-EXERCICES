@@ -1,0 +1,24 @@
+\\demander d'entrer des nombres, les mettre dans un tableau et trouver le max et le min
+\\ Module principal
+DÉBUT
+
+    POUR i = 1 JUSQU'A 5 FAIRE
+        ECRIRE "entrer valeur"
+        LIRE tab_nbr [i]
+    FINPOUR
+
+    maxi = -1
+    mini = 99999
+
+    POUR y = 1 JUSQU'A 5 FAIRE
+        SI tab_nbr[y] > maxi ALORS
+            maxi = tab_nbr[y]
+        FINSI
+            SI tab_nbr [y] < mini ALORS
+            mini = tab_nbr[y]
+            FINSI
+    FINPOUR
+
+    ECRIRE "le nombre maximum est: ", maxi
+    ECRIRE "le nombre minimum est: ", mini
+FIN
